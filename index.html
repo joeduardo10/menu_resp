@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -28,11 +29,18 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi velit impedit, perferendis, dolores quae veritatis ex tempora corporis ratione ad odio? Nemo a explicabo vitae nostrum voluptatem sequi porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fugiat odio expedita iusto soluta accusamus libero perspiciatis ratione dolorum consectetur, voluptatibus laborum alias, officia deleniti! Cumque dolor asperiores quo explicabo?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae hic minima vero quisquam ea? Eos suscipit in alias similique. Blanditiis provident ipsum impedit sed. Quidem culpa nobis sunt at unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eius libero. Reiciendis sit ratione alias doloremque perspiciatis aliquam beatae ipsa non vero, nesciunt quae quod harum, expedita adipisci, ducimus cupiditate?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet, corporis sunt asperiores assumenda, reiciendis excepturi optio accusamus distinctio quisquam ea obcaecati nesciunt voluptatem tempora iste sapiente totam modi. Error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim repudiandae laboriosam incidunt atque dolorum quas quaerat quasi. Doloribus at voluptate nisi alias quod ipsam minus consequatur aperiam, molestias accusamus!</p>
-            <p>lo</p>
 
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+
+        }
         function clickMenu(){
             if(itens.style.display == 'block'){
                 itens.style.display = 'none'
@@ -42,4 +50,4 @@
         }
     </script>
 </body>
-</html><!--tst1-->
+</html>
