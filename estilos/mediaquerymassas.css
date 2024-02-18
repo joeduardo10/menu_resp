@@ -26,7 +26,8 @@ html ,body{
 }
 header{
     background-color: #8C0303;
-    color: white;
+    color: #7E804B;
+    text-shadow: 1px 1px 0px black;
     text-align: center;
 }
 header > h1{
