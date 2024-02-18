@@ -20,12 +20,12 @@
 }
 html ,body{
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: rgb(212, 200, 141);
     font-family: var(--fonte1);
     
 }
 header{
-    background-color: black;
+    background-color: #8C0303;
     color: white;
     text-align: center;
 }
@@ -74,7 +74,8 @@ section.imagem > p{
 }
 section#img01{
     background-image: url('../imagens/massa84.jpg');
-    background-position: right right;
+    
+    background-position: left center;
 }
 section#img02{
     background-image: url('../imagens/amassa47.jpg');
