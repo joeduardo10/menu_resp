@@ -1,13 +1,17 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');  /*@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');*/
-/*font carregada==>
-        @font-face {
-            font-family: 'Minha Fonte';
-            src: url('littlebird.ttf');*/
+ 
 @font-face { /*usar fonte baixada*/
     font-family: 'Sriracha' ;
     src: url('../fonts/Sriracha-Regular.ttf')format('truetype');
 }
+@font-face {
+    font-family: "Dancing Script";
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf')format('truetype');
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+
+
 *{   /*o asteriscco afeta o documento todo*/
     margin: 0px;
     padding: 0px; 
@@ -15,8 +19,8 @@
 }
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2:'Passion One', sans-serif;
-    --fonte3: 'Sriracha', cursive; 
+    --fonte2: 'Dancing Script', cursive;
+    --fonte3: 'dekko', cursive; 
 }
 html ,body{
     min-height: 100vh;
@@ -26,19 +30,22 @@ html ,body{
 }
 header{
     background-color: #8C0303;
-    color: #8f8f57;
+    color: #c2c226;
     text-shadow: 1px 1px 0px black;
     text-align: center;
 }
 header > h1{
     padding-top: 50px;
    /* text-transform: uppercase; transforma em maiusculo*/
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
     font-family: var(--fonte2);
-    font-size: 10vw;
+    text-shadow: 2px 2px 0px black;
+    font-size: 14vw;
 }
+
 header > p{
     padding-bottom: 50px;
+ 
 }
 header a, footer a{
     color: white;
@@ -80,7 +87,7 @@ section#img01{
 }
 section#img02{
     background-image: url('../imagens/massaabr65.jpg');
-    background-position: left center;
+    background-position: top center;
 }
 
 footer{
